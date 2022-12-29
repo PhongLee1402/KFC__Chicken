@@ -1,0 +1,47 @@
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 9999;
+
+}
+
+.header__content .navbar-brand img{
+    height: 75px;
+    width: 75px;
+    margin: 0px 15px;
+}
+.header__content .navbar-nav a{
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.header__content .navbar-nav li{
+    padding: 0px 10px;
+    position: relative;
+}
+.header__content .navbar-nav li::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .5s;
+}
+.header__content .navbar-nav li:hover::after{
+width: 100%;
+}
+.header__right li{
+padding: 8px;
+text-align: center;
+}
+
+.header__right li a{
+    color:black;
+    font-weight: bold;
+}
+.header__right li a:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,56 @@
+
+.BackToTop i{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    color:black;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1px 1px 9px grey;
+    transition: all .5s;
+    z-index: 9999;
+}
+.BackToTop {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+.cd-top--is-visible{
+    visibility: visible;
+    opacity: .5;
+    transition: all .5s;
+}
+.cd-top--fade-out {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.header__content .Order{
+   position: absolute;
+   top:25%;
+   right: 400px;
+   background-color: red;
+    padding: 5px 20px;
+    color:white;
+    border-radius: 10px;
+    
+}
+.header__content .Order,.header__content  .Order.cd-top--is-visible{
+   visibility: hidden;
+   opacity: 0;
+   transition: all .5s;
+   background-color: white;
+   color:red;
+}
+.header__content .Order.cd-top--is-visible{
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s;
+    color:red;
+    background-color: white;
+ 
+}
