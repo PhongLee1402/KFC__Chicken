@@ -1,5 +1,10 @@
 /* FOOTER */
 footer{
+    /* cho màu chữ có màu trắng
+    độ cao của footer là 610px 
+    phần màu nền có màu đen mờ 
+    overflow hidden khi out ra khỏi nền của thẻ div lớn thì sẽ bị biến mất
+    căn lề trong trên 50px dưới 15px trái phải 20px */
     color:white;
     height: 610px;
     background-color:#202124;
@@ -7,28 +12,37 @@ footer{
     padding: 50px 15px 20px;
 }
 footer a{
+    /* màu chữ theo mã màu */
     color:#ababab;
 }
 footer li{
+    /* cho phần hiển thị của thẻ li là block */
  display: block;
 }
 .footer__content nav{
+    /* dàn hàng ngang thẻ nav */
     display: flex;
+    /* cách các phần tử bằng nhau */
     justify-content: space-between;
+    /* khoảng cách giữa các hàng cách nhau 30px */
     line-height: 30px;
 }
 .footer__content ul{
+    /* phần ul căn lề ngoài trái phải 30px px */
     margin: 0px 30px;
 }
 .footer__content img{
+    /* độ rộng của img là 150px */
     width: 150px;
 }
 .footer__content nav ul:nth-child(5) li{
+    /* cho thẻ li là display inline */
 display: inline;
 }
 .footer__content nav h3{
     font-size: 20px;
 }
+/* chia khoảng các của các phần tử được dàn hàng ngang bằng nhau */
 .footer__content nav ul:nth-child(1){
     width: 40%;
 }
@@ -42,12 +56,17 @@ display: inline;
     width:30%;
 }
 
-
+/* phần bản quyền của thẻ i */
 .license i{
+    /* màu của thẻ i là màu trắng */
     color:white;
+    /* kích cỡ chữ là 20px */
     font-size: 20px;
+    /* cách lề ngoài trái phải 5px */
     margin: 0px 5px;
+    /* phần viền màu trắng */
     border: 1px solid white;
+    /* độ rộng của thẻ i là 30px cùng với chiều cao và khoảng cách của các dòng */
     width: 30px;
     text-align: center;
     border-radius: 30px;
@@ -56,17 +75,24 @@ display: inline;
     transition: all .5s;
 }
 .license i:hover{
+    /* sau khi hover vào thẻ i thì phần tử sẽ quay 360 độ */
 box-shadow: 1px 1px white;
 transform: rotate(360deg);
 }
 .license{
+    /* dàn hàng ngang các phần tử của class */
     display: flex;
     justify-content: flex-end;
+    /* căng giữa các phần tử theo chiều dọc  */
     align-items: center;
 }
 .license p{
+    /* độ rộng của phần p là 100% */
     width: 100%;
+    /* căn giữa phần tử p */
     text-align: center;
+    /* kích cỡ chữ là 10px */
     font-size: 10px;
+    /* có màu xám */
     color:grey;
 }

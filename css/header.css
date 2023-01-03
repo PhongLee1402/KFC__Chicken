@@ -1,47 +1,72 @@
 header{
+    /* cho phần header cố định trên đầu trang wed */
     position: fixed;
+    /* độ rộng là 100% */
     width: 100%;
+    /* có phần màu nền là màu trắng */
     background-color: white;
+    /* độ phủ xếp chồng trên trang wed là điểm cao nhất */
     z-index: 9999;
 
 }
 
 .header__content .navbar-brand img{
+    /* độ cao và độ rộng của logo là 75px */
     height: 75px;
     width: 75px;
+    /* căn lề trái phải là 15px */
     margin: 0px 15px;
 }
 .header__content .navbar-nav a{
+    /* cho thẻ a có viền chữ đậm */
     font-weight: bold;
+    /* kích cỡ chữ là 18px */
     font-size: 18px;
+    /* cho các phần chữ ở phần navbảr toàn bộ viết hoa */
     text-transform: uppercase;
 }
 .header__content .navbar-nav li{
+    /* căn lề trong trái phải 10px */
     padding: 0px 10px;
+    /* đặt cho thẻ li là phần tử mẹh */
     position: relative;
 }
 .header__content .navbar-nav li::after{
+    /*  */
     content: "";
+    /* cho độ rộng ban đầu của phần after là 0% */
     width: 0%;
+    /* và độ cao là 1px */
     height: 1px;
+    /* phần màu nền có màu đen */
     background-color: black;
+    /* đặt phần tử after là phần tử con */
     position: absolute;
+    /* cho  left 50% để aftẻr nằm từ phải sang */
     left: 50%;
+    /* đặt vị trí của phần tử con căn giữa so với phần tử cha */
     transform: translate(-50%,-50%);
+    /* độ chậm diễn ra .5s */
     transition: all .5s;
 }
 .header__content .navbar-nav li:hover::after{
+    /* sau khi hover độ rộng là 100% */
 width: 100%;
 }
 .header__right li{
+/* căn lề trong là 8px */
 padding: 8px;
+/* căn giữa các phần tử li */
 text-align: center;
 }
 
 .header__right li a{
+    /* cho màu của thẻ a có màu đen */
     color:black;
+    /* cho thẻ a có độ đậm  */
     font-weight: bold;
 }
 .header__right li a:hover{
+    /* tắt phần underline cho thẻ a */
     text-decoration: none;
 }

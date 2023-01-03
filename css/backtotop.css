@@ -1,20 +1,31 @@
 
 .BackToTop i{
+    /* chỉnh thuộc tính của thẻ i là fixed */
     position: fixed;
+    /* vị trí của phần tử được chỉnh fixed */
     right: 40px;
     bottom: 40px;
+    /* màu của thẻ i là black */
     color:black;
+    /* chiều rộng là 30px chiều cao là 30px line height dùng để căn phần tử theo chiều dọc  */
     width: 30px;
     height: 30px;
     line-height: 30px;
     text-align: center;
+    /* phần nền của phần tử là màu trắng */
     background-color: white;
+    /* phần viền có màu đen  */
     border: 1px solid black;
+    /* phần bóng của phần tử  */
     box-shadow: 1px 1px 9px grey;
+    /* độ chậm khi biểu diễn phần tử */
     transition: all .5s;
+    /* độ chồng của phần header là cao nhất */
     z-index: 9999;
 }
+/* phần thuộc tính ẩn hiện của nút backtotop */
 .BackToTop {
+    /*  */
     visibility: hidden;
     opacity: 0;
     transition: all .5s;
@@ -28,7 +39,7 @@
     opacity: 1;
     transition: all .5s;
 }
-
+/* phần Order */
 .header__content .Order{
    position: absolute;
    top:25%;
@@ -39,6 +50,7 @@
     border-radius: 10px;
     
 }
+/* phần ẩn hiện của phần Border */
 .header__content .Order,.header__content  .Order.cd-top--is-visible{
    visibility: hidden;
    opacity: 0;

@@ -1,64 +1,95 @@
 *{
+    /* reset page khi sử dụng các trang wed của firefox hay chorme các phần tử con sẽ không bị vỡ layout */
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 html,body{
+    /* hành động khi cuộn trang sẽ mượt mà hơn */
     scroll-behavior: smooth;
 }
 a{
+    /* xóa phần gạch chân của thẻ a */
     text-decoration: none;
+    /* hành động chậm .5s */
     transition: all .5s;
 }
 a:hover {
+    /* khi hover vào thì thẻ a sẽ có màu trắng */
     color:white; 
      text-decoration: none; 
 
 }
 ol,li{
+    /* tắt phần style của thẻ li */
     list-style: none;
+    /* dàn hàng ngang các phần tử trong thẻ li */
     display: inline;
 }
 body{
-    height: 100%;
+    /* chiều cao của thẻ body co giãn theo chiều cao của thẻ html */
+    min-height: 100vh;
 }
 .container{
+    
     width: 80%;
     margin: 0 auto;
 }
 .section{
+    /* tạo khoảng cách giữa các thẻ div lớn */
     padding: 70px 0px;
 }
 
 .title{ 
+    /* độ cao của tiêu đề là 70px */
    height: 70px;
+   /* phần màu nền có màu theo mã màu */
     background-color: #202124;
+    /* cho phần title là phần tử con */
     position: absolute;
+    /* độ rộng  là 100% */
     width: 100%;
+    /* căn lề trên 100px */
     margin-top: 100px;
     top: 0px;
+    /* độ chồng các phần tử có 100 điểm */
     z-index: 100;
+    /* căn giữa các phần tử trong thẻ title */
     text-align: center;
+    /* dàn hàng ngang các phần tử */
     display: inline;
+    /* các phần tử có màu trắng */
     color:white;
+    /* đưa các phần tử ra giữa */
     justify-content: center;
+    /* căn giữa các phần  tử theo chiều dọc */
     align-items: center;
 }
 .title i{
+    /* cho thẻ i có màu trắng */
     color:white;
+    /* khoảng cách lề dưới có 1rem */
     margin-bottom: 1rem;
+    /* căn lề ngoài trái phải 10px */
     margin: 0px 10px;
+    /* có màu đỏ */
     color:red;
 
 }
 .title p{
  margin-bottom: 0px;
+ /* căn lề dưới của thẻ p là 0px */
 }
 .title button{
+    /* cho phần màu nền có màu đỏ */    
     background-color: red;
+    /* cho màu chữ có màu trắng */
     color:white;
+    /* căng lề trong là 10px */
     padding: 10px;
+    /* căn lề trái 10px */
     margin-left: 10px;
+    /* bo tròn phần viền 10px */
     border-radius: 10px;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<< HEADER >>>>>>>>>>>>>>>>>>>*/
@@ -71,157 +102,224 @@ body{
 
 /*<<<<<<<<<<<<<<<<<<<<<<< HEADER >>>>>>>>>>>>>>>>>>>>>*/
 .btn{
-    margin-top: 30px;
+    /* căn lề trên là 30px */
+margin-top: 30px;
+/* phần màu nền theo mã màu bên dưới */
 background-color: #dedede;
+/* căn giữa các phần tử có trong button */
 text-align: center;   
+/* độ rộng của button là 100% */
 width: 100%;
+/* độ cao là 50px */
 height: 50px;
+/* tắt phần viền của nút button */
 border: none;
+/* bo tròn phần viền của button 10px */
 border-radius: 10px;
+/* chữ nút  button có màu trắng */
 color:white;
+/* độ chậm của hành động là 0.8s */
 transition: all .8s;
 }
 .btn:hover{
+    /* phần màu nền của nút button có  màu đỏ*/
     background-color: red;
+    /* màu chữ có màu trắng */
     color:white
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<CAROUSEL>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .CarOusel{
+    /* căn lề trong của phần carousel trên dưới 160px trái phải 0px */
   padding: 160px 0px;
 }
 .owl-carousel .owl-item img {
+    /* độ rộng của hình 100% so với thẻ cha dộ dài 500px */
     width: 100%;
     height: 500px;
 }
-
-
-
-
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<CAROUSEL>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
 /* <<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>> */
 .title__menu{
+    /* phần tử con nào tràn ra khỏi phần tử cha sẽ tự động xóa */
     overflow: hidden;
 }
 .title__menu h3{
+    /* kích cỡ chữ là 28px */
 font-size: 28px;
+/* đặt cho vị trí của thẻ h3 là phần tử mẹ */
 position: relative;
+/* phần màu nền của thẻ h3 là màu trắng */
 background-color: white;
+/* căn lề trên dưới 20px */
 margin: 20px 0px;
+/* phần tử con nào tràn ra ngoài phần tử cha thì phần tử đó sẽ biến mất */
 overflow: hidden;
+/* màu nền có màu trắng */
 background: white;
 }
 .title__menu h3::after{
     content: "";
+    /* chiều rộng của phần after là 100% */
     width: 100%;
+    /* độ dày của phần after là 1px */
     height: 1px;
+    /* vị trí của phần tử con là left và top */
     position: absolute;
     left: 300px;
     top: 50%;
+    /* phần viền mờ tối */
     background: rgba(0,0,0,.1);
 }
 .menu__item img{
+    /* độ rộng là 100% */
 width: 100%;
+/* chiều cao là 100% */
 height: 100%;
+/* phần hiển thị của thẻ img là block */
 display: block;
+/* cho phần img phủ full phần content cho rõ nét hình ảnh */
 object-fit: cover;
+/* hành động chậm  .5s */
 transition: all .5s;
+/* zoom hình lên 1.2 scale */
 transform: scale(1.2);
 }
 
 .menu__items{
+    /* cho phần menu là phần lưới */
     display: grid;
+    /* có 4 cột mỗi phần tử chiếm 1 cột */
     grid-template-columns: repeat(4,1fr);
+    /* khoảng cách của các phần tử trong lưới là 30px */
     gap: 30px;
 
 }
 .menu__item figcaption{
+    /* phần caption có màu nền theo mã màu bên dưới */
     background-color: rgb(231, 230, 230);
+    /* căng  lề trong 15px */
     padding: 15px;
+    /* bo tròn góc dưới trái phải 10px */
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    /* màu chữ có màu đen */
     color: black;
-    position: relative;
+    /* cho màu chữ đậm */
     font-weight: bold;
 }
 
 .menu__item{
+    /* các phần tử con tràn ra ngoài viền thì sẽ biến mất */
     overflow: hidden;
+    /* hành động chậm .5s */
     transition: all .5s;
+    /* bo tròn các góc thẻ 10px */
     border-radius: 10px;
 
 }
 .menu__item img:hover{
+    /* khi hover vào hình thực hiên animation scale */
    animation: move_menu 1s linear;
 }
 .owl-carousel.owl-drag .owl-item img{
+    /* chỉnh độ rộng của thẻ img là 100% và cả chiều cao cho thẻ img display block để img phủ đầy lớp content */
     width:100%;
     height: 100%;
     display: block;
 } 
 .offer__for__you .owl-carousel-02{
+    /* khoảng cách của các phần tử theo chiều dọc là 25px */
     line-height: 25px;
 
 }
 .offer__for__you .owl-carousel-02 figcaption{
+    /* dàn hàng ngàng các phần tử con bên trong thẻ tag */
     display: flex;
+    /* căn các phần tử có vị trí bằng nhau */
     justify-content: space-between;
+    /* cỡ chữ đậm */
     font-weight: bold;
 }
 .offer__for__you .owl-carousel-02 .item{
+    /* phủ bóng cho các phần tử có class item */
     box-shadow: 1px 1px 9px grey;
+    /* căn lề trong là 20px */
     padding: 20px;
+    /* phần viền cứng có màu theo mã màu bên dưới */
     border:1px solid #dedede;
 }
 .offer__for__you .owl-carousel-02 .item figure img:hover{
+    /* khi hover vào hình thì hình sẽ thực hiện animation */
     animation: move_menu 1s  linear;
 }
 .offer__for__you .owl-carousel-02 .item figure{
+    /* khi thoát ra khỏi phần tử cha các phần tử con sẽ biến mất */
     overflow: hidden;
 }
 /* <<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* <<<<<listslider>>>>> */
 .owl-carousel-02 .item .sale__offer img{
+    /* chiều rộng và chiều dài 270px */
     width: 270px;
     height: 220px;
 }
 .sale__offer{
-    
+    /* phần border 1px màu theo mã màu bên dưới */
     border: 1px solid rgba(128, 128, 128, 0.349);
+    /* căng phần lề trong là 10px */
     padding: 10px;
+    /* khoảng cách của các phần tử con theo chiều dọc là 25px  */
     line-height: 25px;
+    /* căn giữa các phần tử content trong thẻ cha */
     text-align: center;
 }
 .sale__offer .sale__offer__title{
+    /* dàn hàng ngang phần title */
     display: flex;
+    /* căn cho các phần tử bằng nhau */
     justify-content: space-between;
 }
 .sale__offer .sale__offer__text{
+    /* căn lề trên 10px */
     margin-top: 10px;
+    /* căn lề trái cho phần content trong thẻ có class sale offer text */
     text-align: left;
 }
 /* <<<<<listslider>>>>> */
 
 /* LINK__CONNECT */
 .link__connect{
+    /*  các phần tử con nằm ngoài phần của class cha sẽ bị biến mất */
     overflow: hidden;
+    /* đặt cho phần tử link là phần tử mẹ */
     position: relative;
 }
 .dual__app{
+    /* đặt cho class là phần tử con  */
     position: absolute;
+    /* căng giữa theo chiều dọc với top 50% */
     top: 50%;
+    /* cách thẻ cha bên phải 100px */
     right: 100px;
 }
 .dual__app img{
+    /* chiều cao là 55px */
     height: 55px;
+    /* chiều rộng có 17px */
     width: 170px;
+    /* căn lề trái phải 10px */
     margin: 0px 10px;
 }
 
 
 
-
+/* RESPONSIVE */
 @keyframes move_menu {
     
 50%{
