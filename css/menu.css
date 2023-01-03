@@ -1,0 +1,193 @@
+
+ul li {
+    /* tắt phần list của phần ul li */
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    /* tắt phần under-line của thẻ a */
+}
+#menu .menu__content{
+    /* cho phần content cho background color theo mã màu dưới */
+    background-color: #202124;
+    padding: 0;
+}
+#menu .oder ul {
+    /* dàn hàng ngang cho thẻ ul */
+    display: flex;
+    /* căn các phần tử ra giữa */
+    justify-content: center;
+    /* căn giữa các phần tử theo chiều dọc */
+    align-items: center;
+    /* căn lề trong 25px */
+    padding: 25px;
+}
+#menu .oder ul li{
+    /* căn lề trái 20px */
+    margin-left: 20px;
+    align-items: center;
+    /* căn giữa các phần tử theo chiều dọc */
+    text-align: center;
+}
+#menu .oder ul li{
+    /* cho màu của thẻ li là màu trắng */
+    color: white;
+    font-weight: bold;
+}
+#menu .oder a{
+    /* cho phần viền của thẻ a có màu theo mã màu bên dưới */
+    border: 1px solid #e4002b;
+/* bo tròn phần viền 50px */
+    border-radius: 50px;
+    /* phần background có màu theo mã màu bên dưới */
+    background: #e4002b;
+    /* căn lề trong trên dưới 10px trái phải 30px */
+    padding: 10px 30px;
+    /* thẻ a có chữ màu trắng */
+    color: white;
+    /* font chữ đậm */
+    font-weight: bold;
+    /* hành dộng chậm .5s */
+    transition: 0.5s; 
+}
+#menu .oder a:hover{
+    /* khi hover vào thẻ a thì mất dòng under line */
+    text-decoration: none;
+    /* tạo bóng cho thẻ a khi được hover */
+    box-shadow: inset 0 0 0 2em #202124;
+    /* hành động chậm .5s */
+    transition: 0.5s; 
+    /* căn lề trong trên dưới 5px trái  phải 30px */
+    padding: 5px 30px;
+}
+#menu .navigation{
+    /* cho tất cả trong phần tử cha đều in hoa  */
+    text-transform: uppercase;
+    /* tạo phần viền cho phần tử theo mã màu #ccc */
+    border-bottom: 1px solid #ccc;
+    /* phần tử sẽ được cố định sau khi cuộn trang */
+    position: sticky;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    /* phần tử có phần background là màu trắng */
+    background: white;
+    /* căn lề trong  trái phải 90px */
+    padding-left: 90px;
+    padding-right: 90px;
+}
+#menu .navigation a{
+    /* đặt kiểu chữ cho thẻ a */
+    font-family: sans-serif;
+    opacity: 0.5;
+    color: rgba(0,0,0,.5);
+    font-weight: bold;
+    /* căn lề trong trái phải 10px */
+    padding:0 10px ;
+} 
+#menu .owl-carousel a.active{
+    /* thẻ nào được active thì sẽ sở hữu màu ở bên dưới có phần border bottom với chiều rộng là 80% và có độ mờ là 1 */
+    color: #b61984;
+    border-bottom: 5px solid #e4002b;
+    width: 80%;
+    opacity: 1;
+}
+#menu .navigation a:hover{
+    /* khi mà hover vào thẻ a thì sẽ sỡ hữu mà màu như bên dưới */
+    color: #b61984;
+}
+#menu .navigation .item a{
+    /* căn giữa các phần tử của thẻ a */
+    text-align: center;
+    /* tắt phần underline của thẻ a */
+    text-decoration: none;
+}
+#menu .body__content{
+    /* căn lề ngoài top = 100px */
+    margin-top: 100px;
+}
+#menu .food-list{
+    /* cho phần foodlist hiển thị dạng menu lưới */
+        display: grid;
+        /* có 4 hàng mỗi hàng 1 phần tử */
+        grid-template-columns: repeat(4,1fr);
+    /* khoảng cách giữa các phần tử là 20px */
+        gap: 20px;
+}
+#menu h2{
+    /* cho  tất cả phần h2 đều viết hoa */
+    text-transform: uppercase;
+    /* căn lề trên dưới 20px */
+    margin: 20px 0;
+    
+}
+#menu .food{
+    /* phủ bóng cho phần food */
+    box-shadow: 1px 1px 9px grey;
+    /* căn lề trong cho phần food 9px */
+    padding: 10px;
+}
+#menu .food img{
+    /* chiều rộng của ảnh là 100% */
+    width: 100%;
+    /* hành động chậm .5s */
+    transition: all .5s;
+}
+#menu .food h3{
+    /* kích cỡ chữ 19px */
+    font-size: 19px;
+    /* kiểu chữ đậm */
+    font-weight: bold;
+    color: #b61984;
+    margin-bottom: 20px;
+}
+#menu .food a{
+    text-decoration: none;
+}
+#menu .food a img:hover{
+    transform: scale(1.3);
+    
+}
+#menu .food a h3:hover{
+    
+    color: #ccc;
+}
+.owl-carousel .owl-stage {
+    margin-top: 20px;
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+}
+#menu .food .price{
+    color: royalblue;
+    font-weight: bolder;
+}
+#menu .food-list button{
+    /* chiều rộng của nút button sẽ là 100% */
+    width: 100%;
+    /* bo tròn viền cho thẻ button là 30px */
+    border-radius: 30px ;
+    /* căn lề trong của thẻ button là 10px */
+    padding: 10px;
+    /* tắt phần border */
+    border: none;
+    /* màu chữ có màu trắng */
+    color: white;
+
+    /* kiểu chữ đậm */
+    font-weight: bold;
+    /* phủ bóng cho phần button */
+    box-shadow: inset 0 0 0 2em #b61984;
+    /* hành động chậm .5s */
+    transition: 0.35s; 
+}
+#menu .food-list button:hover{
+    /* khi hover thì nút button có màu như mã màu bên dưới */
+    color: #b61984;
+    /* tắt phần boxshadhow */
+    box-shadow: none;
+}
+figure{
+    /* nếu thoát khỏi thẻ figure các phần tử con sẽ biến mất */
+    overflow: hidden;
+}

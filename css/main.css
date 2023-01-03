@@ -139,6 +139,12 @@ transition: all .8s;
     width: 100%;
     height: 500px;
 }
+.owl-carousel.owl-drag .owl-item img{
+    /* chỉnh độ rộng của thẻ img là 100% và cả chiều cao cho thẻ img display block để img phủ đầy lớp content */
+    width:100%;
+    height: 100%;
+    display: block;
+} 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<CAROUSEL>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
@@ -223,16 +229,10 @@ transform: scale(1.2);
     border-radius: 10px;
 
 }
-.menu__item img:hover{
-    /* khi hover vào hình thực hiên animation scale */
-   animation: move_menu 1s linear;
-}
-.owl-carousel.owl-drag .owl-item img{
-    /* chỉnh độ rộng của thẻ img là 100% và cả chiều cao cho thẻ img display block để img phủ đầy lớp content */
-    width:100%;
-    height: 100%;
-    display: block;
-} 
+
+
+/* <<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<listslider>>>>> */
 .offer__for__you .owl-carousel-02{
     /* khoảng cách của các phần tử theo chiều dọc là 25px */
     line-height: 25px;
@@ -261,9 +261,8 @@ transform: scale(1.2);
 .offer__for__you .owl-carousel-02 .item figure{
     /* khi thoát ra khỏi phần tử cha các phần tử con sẽ biến mất */
     overflow: hidden;
+    z-index: 100;
 }
-/* <<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>> */
-/* <<<<<listslider>>>>> */
 .owl-carousel-02 .item .sale__offer img{
     /* chiều rộng và chiều dài 270px */
     width: 270px;
