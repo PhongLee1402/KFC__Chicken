@@ -691,7 +691,13 @@
     </div>
 </footer>
 <!-- FOOTER -->
-
+<script>
+    $(".owl-carousel .item a").click(function () {
+        $(".owl-carousel .item a").removeClass("active");
+        $(this).addClass("active");
+        var id = $(this).find("a").attr("href");
+    });
+</script>
 
 
     <script src="/js/jquery.js"></script>

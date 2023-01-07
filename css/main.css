@@ -246,11 +246,17 @@ transform: scale(1.2);
     /* cỡ chữ đậm */
     font-weight: bold;
 }
+.offer__for__you .owl-carousel-02 figcaption p:nth-child(1){
+    width: 80%;
+}
+.offer__for__you .owl-carousel-02 figcaption p:nth-child(2){
+    width: 50%;
+}
 .offer__for__you .owl-carousel-02 .item{
     /* phủ bóng cho các phần tử có class item */
     box-shadow: 1px 1px 9px grey;
     /* căn lề trong là 20px */
-    padding: 20px;
+    padding: 10px;
     /* phần viền cứng có màu theo mã màu bên dưới */
     border:1px solid #dedede;
 }
